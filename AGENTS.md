@@ -16,4 +16,4 @@ Automated coverage is pending; follow `TESTING.md` when introducing Vitest + Rea
 Write imperative commit subjects under ~72 characters and separate feature, refactor, and chore work. Summaries should note behaviour changes and touched modules (e.g., `components/QuoteForm.tsx`, `app/storage.ts`). PRs must include linked issues, screenshots or GIFs for UI updates, and the latest command output (`npm run build`, plus any new test scripts). Keep `.env.local` and other secrets out of commits.
 
 ## Configuration & Secrets
-Set `GEMINI_API_KEY=<value>` in `.env.local` before running the app. Document any new environment variables in `README.md` and provide non-sensitive defaults so `npm run dev` still starts without production credentials. Generated PDFs, logs, and local secrets should remain untracked.
+No environment variables are required by default. Document any new variables in `README.md` and provide non-sensitive defaults so `npm run dev` still starts without production credentials. Generated PDFs, logs, and local secrets should remain untracked.
