@@ -57,6 +57,28 @@ header {
     margin-bottom: 2rem;
 }
 
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.brand-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .header-brand {
+        gap: 0.75rem;
+    }
+
+    .brand-logo {
+        height: 36px;
+    }
+}
+
 .form-content {
     display: grid;
     grid-template-columns: 1fr 350px;

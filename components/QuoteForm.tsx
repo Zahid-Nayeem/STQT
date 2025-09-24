@@ -424,9 +424,12 @@ const QuoteForm: React.FC<QuoteFormProps> = ({ onBackToDashboard, onQuoteCreated
     return (
         <div className="app-container">
             <header>
-                <div>
-                    <h1>Create Quotation</h1>
-                    <p className="text-muted">Capture customer details, build items, and preview the final quote in one flow.</p>
+                <div className="header-brand">
+                    <img src="/client-logo.svg" alt="Client brand logo" className="brand-logo" />
+                    <div>
+                        <h1>Create Quotation</h1>
+                        <p className="text-muted">Capture customer details, build items, and preview the final quote in one flow.</p>
+                    </div>
                 </div>
                 <button className="btn btn-secondary" onClick={handleViewDashboard}>View Dashboard</button>
             </header>

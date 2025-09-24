@@ -51,9 +51,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ quotes, onCreateNew, onPre
     return (
         <div className="app-container">
             <header>
-                <div>
-                    <h1>Quote Dashboard</h1>
-                    <p className="text-muted">Monitor, filter, and manage all generated quotations.</p>
+                <div className="header-brand">
+                    <img src="/client-logo.svg" alt="Client brand logo" className="brand-logo" />
+                    <div>
+                        <h1>Quote Dashboard</h1>
+                        <p className="text-muted">Monitor, filter, and manage all generated quotations.</p>
+                    </div>
                 </div>
                 <button className="btn btn-primary" onClick={onCreateNew}>Create New Quote</button>
             </header>
